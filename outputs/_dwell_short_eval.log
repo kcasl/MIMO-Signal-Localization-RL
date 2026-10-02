@@ -1,0 +1,42 @@
+watching for a short-stage checkpoint...
+evaluating checkpoints/adwa_gru_ppo_short75_backup.pt (steps=182439 phase=ppo-short)
+/home/robust_lab/anaconda3/envs/MIMO/lib/python3.12/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+Loading ADWA occupancy maps at native PNG resolution (no downsample)
+  loaded Cantwell: 1528x727 px @ 1 cm/px, spawn=425489
+  loaded Denmark: 815x546 px @ 1 cm/px, spawn=150100
+  loaded Eastville: 1041x1408 px @ 1 cm/px, spawn=437150
+  loaded Edgemere: 348x733 px @ 1 cm/px, spawn=155957
+  loaded Elmira: 538x847 px @ 1 cm/px, spawn=157650
+  loaded Eudora: 709x560 px @ 1 cm/px, spawn=126025
+  loaded Greigsville: 782x694 px @ 1 cm/px, spawn=189000
+  loaded Mosquito: 1118x2346 px @ 1 cm/px, spawn=911325
+  loaded Pablo: 1002x440 px @ 1 cm/px, spawn=156475
+  loaded Ribera: 638x876 px @ 1 cm/px, spawn=229200
+  loaded Sands1: 772x724 px @ 1 cm/px, spawn=268600
+  loaded Sands2: 772x724 px @ 1 cm/px, spawn=295586
+  loaded Scioto1: 1197x1020 px @ 1 cm/px, spawn=399650
+  loaded Scioto2: 1197x1020 px @ 1 cm/px, spawn=441975
+  loaded Sisters1: 1017x848 px @ 1 cm/px, spawn=225775
+  loaded Sisters2: 1017x848 px @ 1 cm/px, spawn=128450
+  loaded Swormville: 709x1052 px @ 1 cm/px, spawn=245375
+  Cantwell    train    5/12
+  Denmark     train    6/12
+  Eastville   holdout  8/12
+  Edgemere    train    8/12
+  Elmira      train    6/12
+  Eudora      train    4/12
+  Greigsville train    4/12
+  Mosquito    holdout  8/12
+  Pablo       train    10/12
+  Ribera      train    4/12
+  Sands1      train    6/12
+  Sands2      train    4/12
+  Scioto1     train    3/12
+  Scioto2     holdout  6/12
+  Sisters1    train    10/12
+  Sisters2    holdout  7/12
+  Swormville  train    4/12
+
+DWELL short: train 74/156 = 47%  holdout 29/48 = 60%
+DWELL_EVAL_DONE

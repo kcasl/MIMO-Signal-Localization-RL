@@ -1,0 +1,59 @@
+/home/robust_lab/anaconda3/envs/MIMO/lib/python3.12/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+ckpt=checkpoints/adwa_gru_ppo_short75_backup.pt phase=ppo-short train=0.75 holdout=0.75 stage=4.0-7.0 detour=True
+Loading ADWA occupancy maps at native PNG resolution (no downsample)
+  loaded Cantwell: 1528x727 px @ 1 cm/px, spawn=425489
+  loaded Denmark: 815x546 px @ 1 cm/px, spawn=150100
+  loaded Eastville: 1041x1408 px @ 1 cm/px, spawn=437150
+  loaded Edgemere: 348x733 px @ 1 cm/px, spawn=155957
+  loaded Elmira: 538x847 px @ 1 cm/px, spawn=157650
+  loaded Eudora: 709x560 px @ 1 cm/px, spawn=126025
+  loaded Greigsville: 782x694 px @ 1 cm/px, spawn=189000
+  loaded Mosquito: 1118x2346 px @ 1 cm/px, spawn=911325
+  loaded Pablo: 1002x440 px @ 1 cm/px, spawn=156475
+  loaded Ribera: 638x876 px @ 1 cm/px, spawn=229200
+  loaded Sands1: 772x724 px @ 1 cm/px, spawn=268600
+  loaded Sands2: 772x724 px @ 1 cm/px, spawn=295586
+  loaded Scioto1: 1197x1020 px @ 1 cm/px, spawn=399650
+  loaded Scioto2: 1197x1020 px @ 1 cm/px, spawn=441975
+  loaded Sisters1: 1017x848 px @ 1 cm/px, spawn=225775
+  loaded Sisters2: 1017x848 px @ 1 cm/px, spawn=128450
+  loaded Swormville: 709x1052 px @ 1 cm/px, spawn=245375
+Cantwell    [train] succ 6/12  best: reached=True steps=11 min_euc=0.89m -> Cantwell.gif
+Denmark     [train] succ 6/12  best: reached=True steps=13 min_euc=0.70m -> Denmark.gif
+Eastville   [holdout] succ 7/12  best: reached=True steps=17 min_euc=0.48m -> Eastville_holdout.gif
+Edgemere    [train] succ 5/12  best: reached=True steps=16 min_euc=0.34m -> Edgemere.gif
+Elmira      [train] succ 5/12  best: reached=True steps=18 min_euc=0.73m -> Elmira.gif
+Eudora      [train] succ 5/12  best: reached=True steps=12 min_euc=0.91m -> Eudora.gif
+Greigsville [train] succ 7/12  best: reached=True steps=16 min_euc=0.93m -> Greigsville.gif
+Mosquito    [holdout] succ 7/12  best: reached=True steps=20 min_euc=0.55m -> Mosquito_holdout.gif
+Pablo       [train] succ 6/12  best: reached=True steps=15 min_euc=0.57m -> Pablo.gif
+Ribera      [train] succ 8/12  best: reached=True steps=15 min_euc=0.27m -> Ribera.gif
+Sands1      [train] succ 5/12  best: reached=True steps=17 min_euc=0.46m -> Sands1.gif
+Sands2      [train] succ 8/12  best: reached=True steps=22 min_euc=0.97m -> Sands2.gif
+Scioto1     [train] succ 6/12  best: reached=True steps=14 min_euc=0.35m -> Scioto1.gif
+Scioto2     [holdout] succ 4/12  best: reached=True steps=23 min_euc=0.96m -> Scioto2_holdout.gif
+Sisters1    [train] succ 8/12  best: reached=True steps=16 min_euc=0.59m -> Sisters1.gif
+Sisters2    [holdout] succ 5/12  best: reached=True steps=13 min_euc=0.90m -> Sisters2_holdout.gif
+Swormville  [train] succ 2/12  best: reached=True steps=16 min_euc=0.59m -> Swormville.gif
+
+=== per-map greedy success ===
+  Cantwell    train    6/12
+  Denmark     train    6/12
+  Eastville   holdout  7/12
+  Edgemere    train    5/12
+  Elmira      train    5/12
+  Eudora      train    5/12
+  Greigsville train    7/12
+  Mosquito    holdout  7/12
+  Pablo       train    6/12
+  Ribera      train    8/12
+  Sands1      train    5/12
+  Sands2      train    8/12
+  Scioto1     train    6/12
+  Scioto2     holdout  4/12
+  Sisters1    train    8/12
+  Sisters2    holdout  5/12
+  Swormville  train    2/12
+train mean 77/156  holdout mean 23/48
+RENDER_ALL_DONE

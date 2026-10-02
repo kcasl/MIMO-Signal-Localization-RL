@@ -1,0 +1,198 @@
+Loading ADWA occupancy maps at native PNG resolution (no downsample)
+  loaded Cantwell: 1528x727 px @ 1 cm/px, spawn=425489
+  loaded Denmark: 815x546 px @ 1 cm/px, spawn=150100
+  loaded Eastville: 1041x1408 px @ 1 cm/px, spawn=437150
+  loaded Edgemere: 348x733 px @ 1 cm/px, spawn=155957
+  loaded Elmira: 538x847 px @ 1 cm/px, spawn=157650
+  loaded Eudora: 709x560 px @ 1 cm/px, spawn=126025
+  loaded Greigsville: 782x694 px @ 1 cm/px, spawn=189000
+  loaded Mosquito: 1118x2346 px @ 1 cm/px, spawn=911325
+  loaded Pablo: 1002x440 px @ 1 cm/px, spawn=156475
+  loaded Ribera: 638x876 px @ 1 cm/px, spawn=229200
+  loaded Sands1: 772x724 px @ 1 cm/px, spawn=268600
+  loaded Sands2: 772x724 px @ 1 cm/px, spawn=295586
+  loaded Scioto1: 1197x1020 px @ 1 cm/px, spawn=399650
+  loaded Scioto2: 1197x1020 px @ 1 cm/px, spawn=441975
+  loaded Sisters1: 1017x848 px @ 1 cm/px, spawn=225775
+  loaded Sisters2: 1017x848 px @ 1 cm/px, spawn=128450
+  loaded Swormville: 709x1052 px @ 1 cm/px, spawn=245375
+ADWA train buildings (13): Cantwell, Denmark, Edgemere, Elmira, Eudora, Greigsville, Pablo, Ribera, Sands1, Sands2, Scioto1, Sisters1, Swormville
+ADWA holdout/test buildings (4): Eastville, Mosquito, Scioto2, Sisters2
+occupancy: native PNG pixels, no downsample (example Cantwell 1528x727 @ 0.01 m/px)
+obs=58 (MIMO+pose+action encoders, memory=16, no lidar)
+spawn geodesic 5–12 m, no source in ±50° of heading, wall or path-detour required
+budget=2000000 env-steps (no episode cap; max 300 steps/ep → roughly 6666–40000 episodes); numbered checkpoints every 50000 steps (~40 files)
+/home/robust_lab/anaconda3/envs/MIMO/lib/python3.12/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.encoder = TransformerEncoder(
+steps=   1024 episodes=   3 recent-success=0/3 (0.0%) collide=286/1024 (27.9%) loss=1.488 entropy=1.252 kappa=2.96
+steps=   2048 episodes=   6 recent-success=0/6 (0.0%) collide=291/1024 (28.4%) loss=1.818 entropy=1.207 kappa=2.96
+steps=   3072 episodes=  10 recent-success=1/10 (10.0%) collide=452/1024 (44.1%) loss=3.571 entropy=1.250 kappa=2.96
+steps=   4096 episodes=  14 recent-success=1/14 (7.1%) collide=276/1024 (27.0%) loss=1.086 entropy=1.268 kappa=2.96
+steps=   5120 episodes=  18 recent-success=2/18 (11.1%) collide=384/1024 (37.5%) loss=4.481 entropy=1.258 kappa=2.96
+steps=   6144 episodes=  22 recent-success=3/22 (13.6%) collide=326/1024 (31.8%) loss=4.003 entropy=1.254 kappa=2.95
+steps=   7168 episodes=  25 recent-success=3/25 (12.0%) collide=292/1024 (28.5%) loss=1.213 entropy=1.224 kappa=2.95
+steps=   8192 episodes=  29 recent-success=3/29 (10.3%) collide=384/1024 (37.5%) loss=2.489 entropy=1.214 kappa=2.95
+steps=   9216 episodes=  32 recent-success=3/32 (9.4%) collide=225/1024 (22.0%) loss=1.273 entropy=1.208 kappa=2.95
+steps=  10240 episodes=  35 recent-success=3/35 (8.6%) collide=249/1024 (24.3%) loss=1.800 entropy=1.195 kappa=2.95
+steps=  11264 episodes=  40 recent-success=4/40 (10.0%) collide=233/1024 (22.8%) loss=2.954 entropy=1.191 kappa=2.95
+steps=  12288 episodes=  43 recent-success=4/43 (9.3%) collide=338/1024 (33.0%) loss=1.574 entropy=1.188 kappa=2.95
+steps=  13312 episodes=  47 recent-success=4/47 (8.5%) collide=369/1024 (36.0%) loss=2.087 entropy=1.193 kappa=2.95
+steps=  14336 episodes=  50 recent-success=4/50 (8.0%) collide=379/1024 (37.0%) loss=3.019 entropy=1.238 kappa=2.95
+steps=  15360 episodes=  53 recent-success=4/50 (8.0%) collide=559/1024 (54.6%) loss=4.346 entropy=1.300 kappa=2.95
+eval at steps=16384 (8 train + 8 holdout, greedy)...
+steps=  16384 episodes=  59 recent-success=6/50 (12.0%) collide=331/1024 (32.3%) train-eval=0.0% (-145.34) holdout-eval=0.0% (-130.08) loss=8.665 entropy=1.349 kappa=2.95
+steps=  17408 episodes=  62 recent-success=6/50 (12.0%) collide=337/1024 (32.9%) loss=0.837 entropy=1.346 kappa=2.95
+steps=  18432 episodes=  66 recent-success=6/50 (12.0%) collide=349/1024 (34.1%) loss=2.051 entropy=1.319 kappa=2.95
+steps=  19456 episodes=  70 recent-success=6/50 (12.0%) collide=284/1024 (27.7%) loss=4.037 entropy=1.308 kappa=2.95
+steps=  20480 episodes=  73 recent-success=5/50 (10.0%) collide=300/1024 (29.3%) loss=2.438 entropy=1.288 kappa=2.95
+steps=  21504 episodes=  77 recent-success=5/50 (10.0%) collide=338/1024 (33.0%) loss=1.273 entropy=1.276 kappa=2.95
+steps=  22528 episodes=  80 recent-success=5/50 (10.0%) collide=314/1024 (30.7%) loss=1.946 entropy=1.246 kappa=2.94
+steps=  23552 episodes=  84 recent-success=6/50 (12.0%) collide=346/1024 (33.8%) loss=3.178 entropy=1.220 kappa=2.94
+steps=  24576 episodes=  89 recent-success=6/50 (12.0%) collide=493/1024 (48.1%) loss=6.881 entropy=1.212 kappa=2.94
+steps=  25600 episodes=  92 recent-success=6/50 (12.0%) collide=279/1024 (27.2%) loss=1.489 entropy=1.203 kappa=2.94
+steps=  26624 episodes=  96 recent-success=7/50 (14.0%) collide=250/1024 (24.4%) loss=3.169 entropy=1.198 kappa=2.94
+steps=  27648 episodes= 100 recent-success=7/50 (14.0%) collide=282/1024 (27.5%) loss=2.313 entropy=1.194 kappa=2.94
+steps=  28672 episodes= 104 recent-success=8/50 (16.0%) collide=296/1024 (28.9%) loss=2.358 entropy=1.185 kappa=2.94
+steps=  29696 episodes= 107 recent-success=5/50 (10.0%) collide=343/1024 (33.5%) loss=1.756 entropy=1.178 kappa=2.94
+steps=  30720 episodes= 111 recent-success=6/50 (12.0%) collide=355/1024 (34.7%) loss=3.659 entropy=1.172 kappa=2.94
+steps=  31744 episodes= 115 recent-success=6/50 (12.0%) collide=310/1024 (30.3%) loss=1.607 entropy=1.186 kappa=2.94
+eval at steps=32768 (8 train + 8 holdout, greedy)...
+steps=  32768 episodes= 119 recent-success=7/50 (14.0%) collide=338/1024 (33.0%) train-eval=0.0% (-147.04) holdout-eval=0.0% (-142.36) loss=4.186 entropy=1.169 kappa=2.94
+steps=  33792 episodes= 123 recent-success=7/50 (14.0%) collide=352/1024 (34.4%) loss=5.618 entropy=1.158 kappa=2.93
+steps=  34816 episodes= 127 recent-success=8/50 (16.0%) collide=440/1024 (43.0%) loss=2.885 entropy=1.149 kappa=2.93
+steps=  35840 episodes= 131 recent-success=8/50 (16.0%) collide=368/1024 (35.9%) loss=1.542 entropy=1.162 kappa=2.93
+steps=  36864 episodes= 134 recent-success=7/50 (14.0%) collide=316/1024 (30.9%) loss=1.473 entropy=1.166 kappa=2.93
+steps=  37888 episodes= 138 recent-success=8/50 (16.0%) collide=361/1024 (35.3%) loss=3.264 entropy=1.159 kappa=2.93
+steps=  38912 episodes= 142 recent-success=7/50 (14.0%) collide=464/1024 (45.3%) loss=4.363 entropy=1.155 kappa=2.93
+steps=  39936 episodes= 145 recent-success=7/50 (14.0%) collide=349/1024 (34.1%) loss=1.215 entropy=1.160 kappa=2.93
+steps=  40960 episodes= 149 recent-success=6/50 (12.0%) collide=358/1024 (35.0%) loss=1.601 entropy=1.161 kappa=2.93
+steps=  41984 episodes= 152 recent-success=6/50 (12.0%) collide=325/1024 (31.7%) loss=2.074 entropy=1.149 kappa=2.93
+steps=  43008 episodes= 156 recent-success=6/50 (12.0%) collide=365/1024 (35.6%) loss=3.821 entropy=1.155 kappa=2.93
+steps=  44032 episodes= 160 recent-success=5/50 (10.0%) collide=339/1024 (33.1%) loss=2.261 entropy=1.145 kappa=2.93
+steps=  45056 episodes= 163 recent-success=5/50 (10.0%) collide=344/1024 (33.6%) loss=1.378 entropy=1.160 kappa=2.93
+steps=  46080 episodes= 167 recent-success=5/50 (10.0%) collide=409/1024 (39.9%) loss=2.756 entropy=1.173 kappa=2.93
+steps=  47104 episodes= 170 recent-success=4/50 (8.0%) collide=433/1024 (42.3%) loss=2.848 entropy=1.160 kappa=2.93
+steps=  48128 episodes= 173 recent-success=3/50 (6.0%) collide=360/1024 (35.2%) loss=2.975 entropy=1.157 kappa=2.92
+eval at steps=49152 (8 train + 8 holdout, greedy)...
+steps=  49152 episodes= 177 recent-success=2/50 (4.0%) collide=422/1024 (41.2%) train-eval=0.0% (-142.82) holdout-eval=0.0% (-148.45) loss=2.695 entropy=1.146 kappa=2.92
+saved checkpoints/adwa_gru_ppo_step0050176.pt
+steps=  50176 episodes= 181 recent-success=3/50 (6.0%) collide=325/1024 (31.7%) loss=2.844 entropy=1.136 kappa=2.92
+steps=  51200 episodes= 184 recent-success=3/50 (6.0%) collide=525/1024 (51.3%) loss=2.510 entropy=1.190 kappa=2.92
+steps=  52224 episodes= 188 recent-success=2/50 (4.0%) collide=365/1024 (35.6%) loss=2.520 entropy=1.169 kappa=2.92
+steps=  53248 episodes= 191 recent-success=2/50 (4.0%) collide=264/1024 (25.8%) loss=1.517 entropy=1.129 kappa=2.92
+steps=  54272 episodes= 195 recent-success=2/50 (4.0%) collide=197/1024 (19.2%) loss=1.203 entropy=1.128 kappa=2.92
+steps=  55296 episodes= 199 recent-success=3/50 (6.0%) collide=371/1024 (36.2%) loss=3.821 entropy=1.131 kappa=2.92
+steps=  56320 episodes= 202 recent-success=3/50 (6.0%) collide=444/1024 (43.4%) loss=2.194 entropy=1.142 kappa=2.92
+steps=  57344 episodes= 206 recent-success=2/50 (4.0%) collide=373/1024 (36.4%) loss=1.964 entropy=1.170 kappa=2.92
+steps=  58368 episodes= 209 recent-success=2/50 (4.0%) collide=431/1024 (42.1%) loss=3.893 entropy=1.191 kappa=2.92
+steps=  59392 episodes= 213 recent-success=3/50 (6.0%) collide=325/1024 (31.7%) loss=4.008 entropy=1.180 kappa=2.92
+steps=  60416 episodes= 216 recent-success=3/50 (6.0%) collide=441/1024 (43.1%) loss=2.437 entropy=1.174 kappa=2.92
+steps=  61440 episodes= 220 recent-success=3/50 (6.0%) collide=256/1024 (25.0%) loss=2.316 entropy=1.146 kappa=2.92
+steps=  62464 episodes= 224 recent-success=4/50 (8.0%) collide=543/1024 (53.0%) loss=4.111 entropy=1.153 kappa=2.92
+steps=  63488 episodes= 227 recent-success=4/50 (8.0%) collide=411/1024 (40.1%) loss=2.409 entropy=1.149 kappa=2.92
+steps=  64512 episodes= 231 recent-success=3/50 (6.0%) collide=439/1024 (42.9%) loss=3.521 entropy=1.154 kappa=2.92
+eval at steps=65536 (8 train + 8 holdout, greedy)...
+steps=  65536 episodes= 234 recent-success=3/50 (6.0%) collide=365/1024 (35.6%) train-eval=0.0% (-146.08) holdout-eval=0.0% (-145.67) loss=2.206 entropy=1.143 kappa=2.92
+steps=  66560 episodes= 237 recent-success=3/50 (6.0%) collide=372/1024 (36.3%) loss=1.624 entropy=1.167 kappa=2.92
+steps=  67584 episodes= 242 recent-success=5/50 (10.0%) collide=274/1024 (26.8%) loss=5.106 entropy=1.164 kappa=2.92
+steps=  68608 episodes= 246 recent-success=5/50 (10.0%) collide=214/1024 (20.9%) loss=2.967 entropy=1.158 kappa=2.92
+steps=  69632 episodes= 249 recent-success=4/50 (8.0%) collide=360/1024 (35.2%) loss=2.962 entropy=1.152 kappa=2.92
+steps=  70656 episodes= 252 recent-success=4/50 (8.0%) collide=330/1024 (32.2%) loss=0.915 entropy=1.156 kappa=2.91
+steps=  71680 episodes= 256 recent-success=4/50 (8.0%) collide=414/1024 (40.4%) loss=4.505 entropy=1.149 kappa=2.91
+steps=  72704 episodes= 261 recent-success=5/50 (10.0%) collide=335/1024 (32.7%) loss=6.212 entropy=1.121 kappa=2.91
+steps=  73728 episodes= 264 recent-success=5/50 (10.0%) collide=421/1024 (41.1%) loss=2.212 entropy=1.135 kappa=2.91
+steps=  74752 episodes= 268 recent-success=5/50 (10.0%) collide=426/1024 (41.6%) loss=3.923 entropy=1.139 kappa=2.91
+steps=  75776 episodes= 271 recent-success=5/50 (10.0%) collide=465/1024 (45.4%) loss=2.812 entropy=1.135 kappa=2.91
+steps=  76800 episodes= 275 recent-success=4/50 (8.0%) collide=273/1024 (26.7%) loss=2.858 entropy=1.143 kappa=2.91
+steps=  77824 episodes= 279 recent-success=5/50 (10.0%) collide=341/1024 (33.3%) loss=4.863 entropy=1.121 kappa=2.91
+steps=  78848 episodes= 283 recent-success=6/50 (12.0%) collide=301/1024 (29.4%) loss=4.428 entropy=1.117 kappa=2.91
+steps=  79872 episodes= 287 recent-success=6/50 (12.0%) collide=279/1024 (27.2%) loss=1.667 entropy=1.112 kappa=2.91
+steps=  80896 episodes= 290 recent-success=4/50 (8.0%) collide=372/1024 (36.3%) loss=2.320 entropy=1.120 kappa=2.91
+eval at steps=81920 (8 train + 8 holdout, greedy)...
+steps=  81920 episodes= 293 recent-success=4/50 (8.0%) collide=350/1024 (34.2%) train-eval=0.0% (-143.33) holdout-eval=0.0% (-148.86) loss=1.953 entropy=1.116 kappa=2.91
+steps=  82944 episodes= 297 recent-success=4/50 (8.0%) collide=468/1024 (45.7%) loss=2.877 entropy=1.133 kappa=2.91
+steps=  83968 episodes= 300 recent-success=4/50 (8.0%) collide=432/1024 (42.2%) loss=2.805 entropy=1.142 kappa=2.91
+steps=  84992 episodes= 304 recent-success=4/50 (8.0%) collide=424/1024 (41.4%) loss=2.460 entropy=1.148 kappa=2.91
+steps=  86016 episodes= 307 recent-success=4/50 (8.0%) collide=300/1024 (29.3%) loss=2.638 entropy=1.149 kappa=2.91
+steps=  87040 episodes= 311 recent-success=3/50 (6.0%) collide=477/1024 (46.6%) loss=4.593 entropy=1.151 kappa=2.91
+steps=  88064 episodes= 314 recent-success=3/50 (6.0%) collide=490/1024 (47.9%) loss=2.610 entropy=1.150 kappa=2.91
+steps=  89088 episodes= 318 recent-success=3/50 (6.0%) collide=386/1024 (37.7%) loss=2.160 entropy=1.145 kappa=2.91
+steps=  90112 episodes= 321 recent-success=3/50 (6.0%) collide=370/1024 (36.1%) loss=1.932 entropy=1.142 kappa=2.91
+steps=  91136 episodes= 325 recent-success=3/50 (6.0%) collide=276/1024 (27.0%) loss=1.690 entropy=1.145 kappa=2.91
+steps=  92160 episodes= 328 recent-success=2/50 (4.0%) collide=389/1024 (38.0%) loss=2.640 entropy=1.134 kappa=2.91
+steps=  93184 episodes= 331 recent-success=2/50 (4.0%) collide=288/1024 (28.1%) loss=0.980 entropy=1.141 kappa=2.91
+steps=  94208 episodes= 335 recent-success=2/50 (4.0%) collide=375/1024 (36.6%) loss=3.075 entropy=1.131 kappa=2.90
+steps=  95232 episodes= 339 recent-success=2/50 (4.0%) collide=390/1024 (38.1%) loss=2.108 entropy=1.116 kappa=2.90
+steps=  96256 episodes= 342 recent-success=2/50 (4.0%) collide=376/1024 (36.7%) loss=2.816 entropy=1.113 kappa=2.90
+steps=  97280 episodes= 345 recent-success=2/50 (4.0%) collide=508/1024 (49.6%) loss=2.377 entropy=1.122 kappa=2.90
+eval at steps=98304 (8 train + 8 holdout, greedy)...
+steps=  98304 episodes= 349 recent-success=2/50 (4.0%) collide=331/1024 (32.3%) train-eval=0.0% (-129.09) holdout-eval=0.0% (-146.97) loss=1.563 entropy=1.126 kappa=2.90
+steps=  99328 episodes= 352 recent-success=2/50 (4.0%) collide=288/1024 (28.1%) loss=3.330 entropy=1.144 kappa=2.90
+saved checkpoints/adwa_gru_ppo_step0100352.pt
+steps= 100352 episodes= 356 recent-success=2/50 (4.0%) collide=476/1024 (46.5%) loss=3.637 entropy=1.150 kappa=2.90
+steps= 101376 episodes= 359 recent-success=2/50 (4.0%) collide=388/1024 (37.9%) loss=1.915 entropy=1.130 kappa=2.90
+steps= 102400 episodes= 363 recent-success=1/50 (2.0%) collide=352/1024 (34.4%) loss=2.631 entropy=1.140 kappa=2.90
+steps= 103424 episodes= 366 recent-success=1/50 (2.0%) collide=430/1024 (42.0%) loss=2.055 entropy=1.132 kappa=2.90
+steps= 104448 episodes= 369 recent-success=1/50 (2.0%) collide=357/1024 (34.9%) loss=1.847 entropy=1.128 kappa=2.89
+steps= 105472 episodes= 373 recent-success=2/50 (4.0%) collide=329/1024 (32.1%) loss=3.941 entropy=1.145 kappa=2.89
+steps= 106496 episodes= 377 recent-success=2/50 (4.0%) collide=297/1024 (29.0%) loss=2.121 entropy=1.145 kappa=2.89
+steps= 107520 episodes= 380 recent-success=2/50 (4.0%) collide=373/1024 (36.4%) loss=1.772 entropy=1.144 kappa=2.89
+steps= 108544 episodes= 383 recent-success=2/50 (4.0%) collide=350/1024 (34.2%) loss=3.959 entropy=1.131 kappa=2.89
+steps= 109568 episodes= 387 recent-success=1/50 (2.0%) collide=546/1024 (53.3%) loss=3.926 entropy=1.119 kappa=2.89
+steps= 110592 episodes= 390 recent-success=1/50 (2.0%) collide=433/1024 (42.3%) loss=2.704 entropy=1.105 kappa=2.89
+steps= 111616 episodes= 394 recent-success=1/50 (2.0%) collide=416/1024 (40.6%) loss=3.038 entropy=1.105 kappa=2.89
+steps= 112640 episodes= 399 recent-success=4/50 (8.0%) collide=453/1024 (44.2%) loss=7.406 entropy=1.106 kappa=2.89
+steps= 113664 episodes= 403 recent-success=5/50 (10.0%) collide=368/1024 (35.9%) loss=4.277 entropy=1.108 kappa=2.89
+eval at steps=114688 (8 train + 8 holdout, greedy)...
+steps= 114688 episodes= 407 recent-success=5/50 (10.0%) collide=332/1024 (32.4%) train-eval=0.0% (-136.12) holdout-eval=0.0% (-147.96) loss=2.354 entropy=1.116 kappa=2.89
+steps= 115712 episodes= 412 recent-success=7/50 (14.0%) collide=323/1024 (31.5%) loss=5.684 entropy=1.120 kappa=2.89
+steps= 116736 episodes= 417 recent-success=9/50 (18.0%) collide=329/1024 (32.1%) loss=6.174 entropy=1.143 kappa=2.89
+steps= 117760 episodes= 420 recent-success=9/50 (18.0%) collide=387/1024 (37.8%) loss=3.645 entropy=1.126 kappa=2.89
+steps= 118784 episodes= 424 recent-success=9/50 (18.0%) collide=366/1024 (35.7%) loss=2.583 entropy=1.123 kappa=2.89
+steps= 119808 episodes= 428 recent-success=10/50 (20.0%) collide=505/1024 (49.3%) loss=4.071 entropy=1.109 kappa=2.89
+steps= 120832 episodes= 432 recent-success=11/50 (22.0%) collide=431/1024 (42.1%) loss=3.611 entropy=1.129 kappa=2.89
+steps= 121856 episodes= 436 recent-success=11/50 (22.0%) collide=247/1024 (24.1%) loss=2.446 entropy=1.338 kappa=2.89
+steps= 122880 episodes= 440 recent-success=12/50 (24.0%) collide=334/1024 (32.6%) loss=5.037 entropy=1.257 kappa=2.89
+steps= 123904 episodes= 445 recent-success=13/50 (26.0%) collide=365/1024 (35.6%) loss=5.966 entropy=1.230 kappa=2.89
+steps= 124928 episodes= 448 recent-success=11/50 (22.0%) collide=442/1024 (43.2%) loss=4.389 entropy=1.177 kappa=2.89
+steps= 125952 episodes= 453 recent-success=12/50 (24.0%) collide=321/1024 (31.3%) loss=5.923 entropy=1.229 kappa=2.89
+steps= 126976 episodes= 457 recent-success=12/50 (24.0%) collide=368/1024 (35.9%) loss=2.179 entropy=1.142 kappa=2.88
+steps= 128000 episodes= 460 recent-success=11/50 (22.0%) collide=215/1024 (21.0%) loss=1.514 entropy=1.272 kappa=2.88
+steps= 129024 episodes= 463 recent-success=10/50 (20.0%) collide=213/1024 (20.8%) loss=1.713 entropy=1.202 kappa=2.88
+steps= 130048 episodes= 467 recent-success=8/50 (16.0%) collide=275/1024 (26.9%) loss=1.877 entropy=1.224 kappa=2.88
+eval at steps=131072 (8 train + 8 holdout, greedy)...
+steps= 131072 episodes= 470 recent-success=8/50 (16.0%) collide=226/1024 (22.1%) train-eval=0.0% (-105.20) holdout-eval=0.0% (-136.85) loss=1.140 entropy=1.207 kappa=2.88
+steps= 132096 episodes= 474 recent-success=7/50 (14.0%) collide=201/1024 (19.6%) loss=1.318 entropy=1.213 kappa=2.88
+steps= 133120 episodes= 477 recent-success=6/50 (12.0%) collide=363/1024 (35.4%) loss=2.789 entropy=1.162 kappa=2.88
+steps= 134144 episodes= 481 recent-success=5/50 (10.0%) collide=366/1024 (35.7%) loss=1.516 entropy=1.165 kappa=2.88
+steps= 135168 episodes= 484 recent-success=5/50 (10.0%) collide=477/1024 (46.6%) loss=1.900 entropy=1.149 kappa=2.88
+steps= 136192 episodes= 488 recent-success=6/50 (12.0%) collide=346/1024 (33.8%) loss=4.803 entropy=1.140 kappa=2.88
+steps= 137216 episodes= 491 recent-success=5/50 (10.0%) collide=527/1024 (51.5%) loss=3.843 entropy=1.135 kappa=2.88
+steps= 138240 episodes= 495 recent-success=3/50 (6.0%) collide=337/1024 (32.9%) loss=2.438 entropy=1.126 kappa=2.88
+steps= 139264 episodes= 500 recent-success=4/50 (8.0%) collide=385/1024 (37.6%) loss=3.905 entropy=1.125 kappa=2.88
+steps= 140288 episodes= 504 recent-success=4/50 (8.0%) collide=181/1024 (17.7%) loss=2.276 entropy=1.180 kappa=2.88
+steps= 141312 episodes= 508 recent-success=5/50 (10.0%) collide=335/1024 (32.7%) loss=2.807 entropy=1.187 kappa=2.88
+steps= 142336 episodes= 512 recent-success=5/50 (10.0%) collide=395/1024 (38.6%) loss=2.248 entropy=1.145 kappa=2.88
+steps= 143360 episodes= 515 recent-success=5/50 (10.0%) collide=460/1024 (44.9%) loss=2.274 entropy=1.128 kappa=2.88
+steps= 144384 episodes= 518 recent-success=5/50 (10.0%) collide=300/1024 (29.3%) loss=1.383 entropy=1.143 kappa=2.88
+steps= 145408 episodes= 522 recent-success=5/50 (10.0%) collide=302/1024 (29.5%) loss=1.537 entropy=1.156 kappa=2.88
+steps= 146432 episodes= 525 recent-success=5/50 (10.0%) collide=284/1024 (27.7%) loss=2.318 entropy=1.161 kappa=2.88
+eval at steps=147456 (8 train + 8 holdout, greedy)...
+steps= 147456 episodes= 529 recent-success=6/50 (12.0%) collide=346/1024 (33.8%) train-eval=0.0% (-146.73) holdout-eval=0.0% (-142.88) loss=3.036 entropy=1.127 kappa=2.88
+steps= 148480 episodes= 533 recent-success=6/50 (12.0%) collide=331/1024 (32.3%) loss=2.059 entropy=1.148 kappa=2.88
+steps= 149504 episodes= 536 recent-success=6/50 (12.0%) collide=253/1024 (24.7%) loss=2.305 entropy=1.155 kappa=2.88
+saved checkpoints/adwa_gru_ppo_step0150528.pt
+steps= 150528 episodes= 539 recent-success=5/50 (10.0%) collide=481/1024 (47.0%) loss=3.105 entropy=1.169 kappa=2.88
+steps= 151552 episodes= 543 recent-success=5/50 (10.0%) collide=351/1024 (34.3%) loss=1.668 entropy=1.158 kappa=2.88
+steps= 152576 episodes= 546 recent-success=4/50 (8.0%) collide=239/1024 (23.3%) loss=3.011 entropy=1.193 kappa=2.88
+steps= 153600 episodes= 550 recent-success=4/50 (8.0%) collide=347/1024 (33.9%) loss=3.537 entropy=1.169 kappa=2.88
+steps= 154624 episodes= 554 recent-success=4/50 (8.0%) collide=400/1024 (39.1%) loss=3.371 entropy=1.152 kappa=2.88
+steps= 155648 episodes= 558 recent-success=3/50 (6.0%) collide=244/1024 (23.8%) loss=1.987 entropy=1.147 kappa=2.87
+steps= 156672 episodes= 561 recent-success=3/50 (6.0%) collide=311/1024 (30.4%) loss=1.924 entropy=1.149 kappa=2.87
+steps= 157696 episodes= 565 recent-success=3/50 (6.0%) collide=377/1024 (36.8%) loss=1.993 entropy=1.126 kappa=2.87
+steps= 158720 episodes= 569 recent-success=4/50 (8.0%) collide=341/1024 (33.3%) loss=3.767 entropy=1.153 kappa=2.87
+steps= 159744 episodes= 572 recent-success=4/50 (8.0%) collide=244/1024 (23.8%) loss=2.194 entropy=1.118 kappa=2.87
+steps= 160768 episodes= 576 recent-success=5/50 (10.0%) collide=443/1024 (43.3%) loss=3.838 entropy=1.121 kappa=2.87
+steps= 161792 episodes= 579 recent-success=4/50 (8.0%) collide=342/1024 (33.4%) loss=1.226 entropy=1.112 kappa=2.87
+steps= 162816 episodes= 583 recent-success=4/50 (8.0%) collide=430/1024 (42.0%) loss=3.843 entropy=1.112 kappa=2.87
+eval at steps=163840 (8 train + 8 holdout, greedy)...
