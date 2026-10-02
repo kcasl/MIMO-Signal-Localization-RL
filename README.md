@@ -1,4 +1,4 @@
-# MIMOPathFinder
+# MIMO-Signal-Localization-with-Reinforcement-Learning
 
 RF-only source-seeking: an agent must reach a hidden RF source in an unknown
 indoor environment using only a history of MIMO CSI, a SAVN-CE/MAGNet-style
